@@ -1,9 +1,10 @@
 # Windows-Registry
 - Stores configurations of the operating systems and users
 
-## How to access the registry
+## How to access/parse the registry
 - Start the "Run" dialog box and enter "regedit"
 - Use Registry Explorer/RECmd by Eric Zimmmerman (https://ericzimmerman.github.io/#!index.md)
+- RegRipper
 
 ## Windows Registry Hives
 - HKEY_CLASSES_ROOT (HKCR)
@@ -16,3 +17,8 @@
   - contains user configuration data. Each user will have it's own security identifier (SID)
 - HKEY_CURRENT_CONFIG (HKCC)
   - It is a pointer to a registry key. 
+
+## Registry Locations
+- Default, SAM, Seucirity, Software and System --> Located at C:\Windows\System32\config
+- NTUSER.DAT --> Located at C:\Users\<username>
+- UsrClass.dat --> Located at C:\Users\<username>\AppData\Local\Microsoft\Windows
